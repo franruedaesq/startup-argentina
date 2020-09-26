@@ -1,0 +1,18 @@
+.InputWTitle {
+    width: 100%;
+
+    &__title {
+        margin: 5px 0;
+        font-weight: 500;
+        color: #252525;
+    }
+
+    &__input {
+        border-radius: 5px;
+        border: 1px solid grey;
+        padding: 5px 10px;
+        outline: none;
+        width: 100%;
+        box-sizing:border-box;
+    }
+}

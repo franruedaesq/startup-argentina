@@ -7,11 +7,13 @@ import {
 
 // IMPORT PAGES 
 import Home from './pages/Home/Home'
+import Agregar from './pages/Agregar/Agregar'
 
 
 ReactDOM.render(
   <Router>
     <Route exact path="/"  component={Home} />
+    <Route exact path="/agregar"  component={Agregar} />
   </Router>,
   document.getElementById('root')
 );

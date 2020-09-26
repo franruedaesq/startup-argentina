@@ -7,19 +7,10 @@ const Home = () => {
     const [startupList, setStartupList] = useState([])
 
     useEffect(() => {
-        setStartupList(startupsArr)
+        setStartupList(startupsArr || [])
     }, [])
 
-    const startupsArr = [
-        {
-            name: 'CourseIt',
-            description: 'Description CourseIt'
-        },
-        {
-            name: 'Endava',
-            description: 'Description Endava'
-        }
-    ]
+    const startupsArr = JSON.parse(localStorage.getItem('startups'))
 
     const onChangeSearch = async(e) => {
         let value = (e.target.value).toLowerCase()

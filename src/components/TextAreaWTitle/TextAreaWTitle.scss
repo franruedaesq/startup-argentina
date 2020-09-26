@@ -1,0 +1,15 @@
+.TextAreaWTitle {
+
+    &__title {
+        margin: 5px 0;
+        font-weight: 500;
+        color: #252525;
+    }
+
+    &__textarea {
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+}
